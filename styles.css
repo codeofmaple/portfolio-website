@@ -24,8 +24,13 @@
     color: #474747;
 }
 
-.dark-3{
+.description-dark-3{
     color: #757575;
+    font-size: 18px;
+}
+
+.soft-bg-color{
+    background-color: #FFF8F3;
 }
 
 body{
@@ -33,12 +38,13 @@ body{
 }
 
 .header{
-    background-color: #FFF8F3;
     background-image: url(/images/developer.png), url(/images/header_bg.png);
     background-repeat: no-repeat;
     background-position: top left, bottom right;
 }
 
+
+/* navigation style */
 nav{
     display: flex;
     justify-content: space-between;
@@ -46,33 +52,24 @@ nav{
     align-items: center;
 
 }
-
 nav h1{
     font-weight:800;
     font-size: 45px;
 }
-
 span{
     color: #FD6E0A;
 }
-
 nav ul{
     display: flex;
     align-items: center;
 }
-
 nav ul li{
     list-style: none;
     margin-right: 50px;
 }
-
-
 nav ul li a{
     text-decoration: none;
 }
-
-
-
 nav ul li button{
     color: #FFFFFF;
     padding: 18px 35px;
@@ -82,7 +79,8 @@ nav ul li button{
     border: none;
 }
 
-/* banner */
+
+/* banner with greeting*/
 .bannar {
     display: flex;
     flex-direction: row;
@@ -90,24 +88,25 @@ nav ul li button{
     justify-content: space-between;
     margin: 0 40px 0 220px;
     align-items: center;
+    padding-right: 34px;
 }
-
 .greating{
     font-weight: 600;
     font-size: 45px;
+    margin-bottom: -45px;
 }
-
 .greating-name{
     font-size: 85px;
     font-weight: 700; 
+    margin-bottom: -10px;
     /* margin-top: -60px; */
 }
 
 .greating-description{
-    font-size: 18px;
-    /* margin-top: -50px; */
     margin-bottom: 20px;
 }
+
+
 /*banner hero button */
 .hero-button{
     border-radius: 5px;
@@ -122,4 +121,68 @@ nav ul li button{
     border: 1px solid #FD6E0A;
     background-color: transparent;
     color: #FD6E0A;
+}
+
+
+/* three section */
+.three-section{
+    margin: 130px 230px 130px 230px;
+}
+.section-titles{
+    font-weight: bold;
+    font-size: 35px;
+}
+
+
+/* section one */
+.section-one{
+    /* height: 550px; */
+    /* width: 1140px; */
+    border-radius: 10px;
+    padding: 130px 155px;
+    text-align: center;
+    margin-bottom: 130px;
+}
+
+.about-items{
+    display: flex;
+    justify-content: space-around;
+}
+.item-title{
+    color: #757575;
+    font-size: 20px;
+    margin-bottom: -20px;
+}
+
+.item-description{
+    color: #474747;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+/*  section two */
+.section-two-basic-info{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.section-two-description{
+    margin: 0 115px;
+}
+
+.skill-cards{
+    display: flex;
+    gap: 24px;
+}
+
+.skill-card{
+    box-shadow: 2px 2px 20px 2px #f2eeee;
+    border-radius: 10px;
+    padding: 30px 30px 10px 30px;
+}
+
+.card-title{
+    color: #181818;
+    font-weight: bold;
+    font-size: 20px;
 }
